@@ -1,49 +1,91 @@
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --background-color: #f5f5f5;
-    --text-color: #333333;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    background-image: radial-gradient(
-        var(--primary-color)
-        var(--secondary-color)
-        var(--background-color)
-    );
-    min-height:100vh;
-    background-size: 500% 500%;
-    animation: move 20s alternate infinite;
-}
-
-@keyframes move {
-    from {
-        background-position: 0%;
-    }
-    to {        background-position: 100% 100%;
-    }   
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Arial', sans-serif;
-    color: var(--text-color);
+    background-color: black;
 }
 
-#poster {
-    border: 1px dotted;
-    display: inline-block;
-    padding: 25px;
+.play {
     text-align: center;
+    margin-top: 250px;
 }
-#poster-image {
-    width: 300px;
 
+ img {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin: 200px auto 0 auto;
+    animation-name: bounceIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.play p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Anybody', sans-serif;
+}
+
+
+
+.container {
+    display: inline-block;
+}
+
+.text {
+    font-size: 20px;
+    margin-top: 50px;
+    letter-spacing: 10px;
+    font-family: 'Anybody', sans-serif;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18), cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+img:hover {
+    animation: scale 0.5s ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
