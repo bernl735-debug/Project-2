@@ -1,17 +1,19 @@
+
 body {
     background-color: black;
 }
 
 .play {
-    text-align: center;
-    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
 }
 
- img {
+img {
     max-width: 150px;
     max-height: 150px;
-    display: block;
-    margin: 200px auto 0 auto;
     animation-name: bounceIn;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -87,5 +89,22 @@ img:hover {
     100% {
         transform: scale(1);
     }
+}
+
+.songs {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+margin-left: 200px;
+}
+
+.songs img {
+    margin-left: -60px;
+    max-width: 150px;
+    max-height: 150px;
+    position: relative;
+    z-index: 1;
+    
 }
 
