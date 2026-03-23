@@ -1,4 +1,3 @@
-
 body {
     background-color: black;
 }
@@ -11,14 +10,17 @@ body {
     min-height: 60vh;
 }
 
-img {
-    max-width: 150px;
-    max-height: 150px;
-    animation-name: bounceIn;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
+.songs img,
+.partwo img {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
+    transition: box-shadow 0.3s, transform 0.3s !important;
 }
 
+.songs img:hover,
+.partwo img:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3) !important;
+    transform: translateY(-4px) !important;
+}
 @keyframes bounceIn {
     0% {
         transform: scale(0.5);
@@ -34,6 +36,10 @@ img {
     }
 }
 
+.play img {
+    max-width: 150px;
+    max-height: 150px;
+}
 .play p {
     color: white;
     font-size: 20px;
@@ -75,9 +81,6 @@ img {
     }
 }
 
-img:hover {
-    animation: scale 0.5s ease-in-out;
-}
 
 @keyframes scale {
     0% {
@@ -97,6 +100,7 @@ flex-direction: row;
 justify-content: flex-start;
 align-items: flex-start;
 margin-left: 200px;
+margin-top: 200px;
 }
 
 .songs img {
@@ -107,4 +111,132 @@ margin-left: 200px;
     z-index: 1;
     
 }
+
+.partwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 200px;
+    margin-top: 100px; 
+}
+
+.partwo img {
+    margin-left: -60px;
+    max-width: 150px;
+    max-height: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideInRight {
+    animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideInLeft {
+    animation: slideInLeft 2s ease-out; 
+}
+
+.songs img:nth-child(1) { animation-delay: 0s; }
+.songs img:nth-child(2) { animation-delay: 0.15s; }
+.songs img:nth-child(3) { animation-delay: 0.3s; }
+.songs img:nth-child(4) { animation-delay: 0.45s; }
+.songs img:nth-child(5) { animation-delay: 0.6s; }
+.songs img:nth-child(6) { animation-delay: 0.75s; }
+.songs img:nth-child(7) { animation-delay: 0.9s; }
+.songs img:nth-child(8) { animation-delay: 1.05s; }
+.songs img:nth-child(9) { animation-delay: 1.2s; }
+.songs img:nth-child(10) { animation-delay: 1.35s; }
+.songs img:nth-child(11) { animation-delay: 1.5s; }
+.songs img:nth-child(12) { animation-delay: 1.65s; }
+
+.partwo img:nth-child(1) { animation-delay: 0s; }
+.partwo img:nth-child(2) { animation-delay: 0.15s; }
+.partwo img:nth-child(3) { animation-delay: 0.3s; }
+.partwo img:nth-child(4) { animation-delay: 0.45s; }
+.partwo img:nth-child(5) { animation-delay: 0.6s; }
+.partwo img:nth-child(6) { animation-delay: 0.75s; }
+.partwo img:nth-child(7) { animation-delay: 0.9s; }
+.partwo img:nth-child(8) { animation-delay: 1.05s; }
+.partwo img:nth-child(9) { animation-delay: 1.2s; }
+.partwo img:nth-child(10) { animation-delay: 1.35s; }
+.partwo img:nth-child(11) { animation-delay: 1.5s; }
+.partwo img:nth-child(12) { animation-delay: 1.65s; }
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 
