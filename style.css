@@ -10,35 +10,19 @@ body {
     min-height: 60vh;
 }
 
-.songs img,
-.partwo img {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important;
-    transition: box-shadow 0.3s, transform 0.3s !important;
-}
 
 .songs img:hover,
 .partwo img:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.3) !important;
-    transform: translateY(-4px) !important;
+    transform: translateY(-10px) !important;
+    
 }
-@keyframes bounceIn {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
+
 
 .play img {
     max-width: 150px;
     max-height: 150px;
+    margin: 150px;
+        transition: transform 0.3s ease;
 }
 .play p {
     color: white;
@@ -47,7 +31,9 @@ body {
     font-family: 'Anybody', sans-serif;
 }
 
-
+.play img:hover {
+    transform: translateY(-10px);
+}
 
 .container {
     display: inline-block;
@@ -55,7 +41,7 @@ body {
 
 .text {
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: -100px;
     letter-spacing: 10px;
     font-family: 'Anybody', sans-serif;
     border-right: 5px solid;
@@ -101,6 +87,7 @@ justify-content: flex-start;
 align-items: flex-start;
 margin-left: 200px;
 margin-top: 200px;
+
 }
 
 .songs img {
@@ -109,7 +96,7 @@ margin-top: 200px;
     max-height: 150px;
     position: relative;
     z-index: 1;
-    
+   
 }
 
 .partwo {
