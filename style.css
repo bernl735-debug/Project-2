@@ -1,3 +1,4 @@
+
 body {
     background-color: black;
 }
@@ -10,7 +11,7 @@ body {
     min-height: 60vh;
 }
 
-.play img {
+img {
     max-width: 150px;
     max-height: 150px;
     animation-name: bounceIn;
@@ -74,7 +75,7 @@ body {
     }
 }
 
-.play img:hover {
+img:hover {
     animation: scale 0.5s ease-in-out;
 }
 
@@ -96,7 +97,6 @@ flex-direction: row;
 justify-content: flex-start;
 align-items: flex-start;
 margin-left: 200px;
-margin-top: 200px;
 }
 
 .songs img {
@@ -108,75 +108,3 @@ margin-top: 200px;
     
 }
 
-.partwo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 200px;
-    margin-top: 100px; 
-}
-
-.partwo img {
-    margin-left: -60px;
-    max-width: 150px;
-    max-height: 150px;
-    position: relative;
-    z-index: 1;
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.slideInRight {
-    animation: slideInRight 1s forwards;
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.slideInLeft {
-    animation: slideInLeft 2s ease-out; 
-}
-
-.songs img:nth-child(1) { animation-delay: 0s; }
-.songs img:nth-child(2) { animation-delay: 0.15s; }
-.songs img:nth-child(3) { animation-delay: 0.3s; }
-.songs img:nth-child(4) { animation-delay: 0.45s; }
-.songs img:nth-child(5) { animation-delay: 0.6s; }
-.songs img:nth-child(6) { animation-delay: 0.75s; }
-.songs img:nth-child(7) { animation-delay: 0.9s; }
-.songs img:nth-child(8) { animation-delay: 1.05s; }
-.songs img:nth-child(9) { animation-delay: 1.2s; }
-.songs img:nth-child(10) { animation-delay: 1.35s; }
-.songs img:nth-child(11) { animation-delay: 1.5s; }
-.songs img:nth-child(12) { animation-delay: 1.65s; }
-
-.partwo img:nth-child(1) { animation-delay: 0s; }
-.partwo img:nth-child(2) { animation-delay: 0.15s; }
-.partwo img:nth-child(3) { animation-delay: 0.3s; }
-.partwo img:nth-child(4) { animation-delay: 0.45s; }
-.partwo img:nth-child(5) { animation-delay: 0.6s; }
-.partwo img:nth-child(6) { animation-delay: 0.75s; }
-.partwo img:nth-child(7) { animation-delay: 0.9s; }
-.partwo img:nth-child(8) { animation-delay: 1.05s; }
-.partwo img:nth-child(9) { animation-delay: 1.2s; }
-.partwo img:nth-child(10) { animation-delay: 1.35s; }
-.partwo img:nth-child(11) { animation-delay: 1.5s; }
-.partwo img:nth-child(12) { animation-delay: 1.65s; }
