@@ -20,7 +20,13 @@ h1 {
     margin-bottom: 10px;
 }
 
-
+.songtittle {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Anybody', sans-serif;
+    margin-top: 50px;
+}
 
 .play {
     display: flex;
@@ -33,7 +39,7 @@ h1 {
 
 .songs img:hover,
 .partwo img:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-50px) !important;
     
 }
 
@@ -198,6 +204,7 @@ margin-top: 100px;
   user-select: none;
 }
 
+
 .popup .popuptext {
   visibility: hidden;
   width: 160px;
@@ -230,6 +237,7 @@ margin-top: 100px;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+
 
 
 
