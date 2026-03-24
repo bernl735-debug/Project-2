@@ -2,6 +2,26 @@ body {
     background-color: black;
 }
 
+h1 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Anybody', sans-serif;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.bodytext {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+
 .play {
     display: flex;
     flex-direction: column;
@@ -68,17 +88,6 @@ body {
 }
 
 
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
 .songs {
 display: flex;
@@ -86,7 +95,7 @@ flex-direction: row;
 justify-content: flex-start;
 align-items: flex-start;
 margin-left: 200px;
-margin-top: 200px;
+margin-top: 100px;
 
 }
 
@@ -116,6 +125,13 @@ margin-top: 200px;
     z-index: 1;
 }
 
+.gif img{
+
+    margin-left: 725px;
+    margin-top: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
 @keyframes slideInRight {
     from {
         transform: translateX(100%);
@@ -186,7 +202,7 @@ margin-top: 200px;
   visibility: hidden;
   width: 160px;
   background-color: #555;
-  color: #fff;
+  color: #ff0000;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
@@ -216,14 +232,5 @@ margin-top: 200px;
 }
 
 
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
 
 
