@@ -154,10 +154,12 @@ margin-top: 100px;
 .song-container:focus-within .songtittle {
     display: block;
 }
-.gif img{
-
-    margin-left: 725px;
-    margin-top: 10px;
+.gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gif img {
     max-width: 50px;
     max-height: 50px;
 }
@@ -191,31 +193,33 @@ margin-top: 100px;
     animation: slideInLeft 2s ease-out; 
 }
 
-.songs img:nth-child(1) { animation-delay: 0s; }
-.songs img:nth-child(2) { animation-delay: 0.15s; }
-.songs img:nth-child(3) { animation-delay: 0.3s; }
-.songs img:nth-child(4) { animation-delay: 0.45s; }
-.songs img:nth-child(5) { animation-delay: 0.6s; }
-.songs img:nth-child(6) { animation-delay: 0.75s; }
-.songs img:nth-child(7) { animation-delay: 0.9s; }
-.songs img:nth-child(8) { animation-delay: 1.05s; }
-.songs img:nth-child(9) { animation-delay: 1.2s; }
-.songs img:nth-child(10) { animation-delay: 1.35s; }
-.songs img:nth-child(11) { animation-delay: 1.5s; }
-.songs img:nth-child(12) { animation-delay: 1.65s; }
 
-.partwo img:nth-child(1) { animation-delay: 0s; }
-.partwo img:nth-child(2) { animation-delay: 0.15s; }
-.partwo img:nth-child(3) { animation-delay: 0.3s; }
-.partwo img:nth-child(4) { animation-delay: 0.45s; }
-.partwo img:nth-child(5) { animation-delay: 0.6s; }
-.partwo img:nth-child(6) { animation-delay: 0.75s; }
-.partwo img:nth-child(7) { animation-delay: 0.9s; }
-.partwo img:nth-child(8) { animation-delay: 1.05s; }
-.partwo img:nth-child(9) { animation-delay: 1.2s; }
-.partwo img:nth-child(10) { animation-delay: 1.35s; }
-.partwo img:nth-child(11) { animation-delay: 1.5s; }
-.partwo img:nth-child(12) { animation-delay: 1.65s; }
+
+.songs .song-container:nth-child(1) img { animation-delay: 0s; }
+.songs .song-container:nth-child(2) img { animation-delay: 0.15s; }
+.songs .song-container:nth-child(3) img { animation-delay: 0.3s; }
+.songs .song-container:nth-child(4) img { animation-delay: 0.45s; }
+.songs .song-container:nth-child(5) img { animation-delay: 0.6s; }
+.songs .song-container:nth-child(6) img { animation-delay: 0.75s; }
+.songs .song-container:nth-child(7) img { animation-delay: 0.9s; }
+.songs .song-container:nth-child(8) img { animation-delay: 1.05s; }
+.songs .song-container:nth-child(9) img { animation-delay: 1.2s; }
+.songs .song-container:nth-child(10) img { animation-delay: 1.35s; }
+.songs .song-container:nth-child(11) img { animation-delay: 1.5s; }
+.songs .song-container:nth-child(12) img { animation-delay: 1.65s; }
+
+.partwo .song-container:nth-child(1) img { animation-delay: 0s; }
+.partwo .song-container:nth-child(2) img { animation-delay: 0.15s; }
+.partwo .song-container:nth-child(3) img { animation-delay: 0.3s; }
+.partwo .song-container:nth-child(4) img { animation-delay: 0.45s; }
+.partwo .song-container:nth-child(5) img { animation-delay: 0.6s; }
+.partwo .song-container:nth-child(6) img { animation-delay: 0.75s; }
+.partwo .song-container:nth-child(7) img { animation-delay: 0.9s; }
+.partwo .song-container:nth-child(8) img { animation-delay: 1.05s; }
+.partwo .song-container:nth-child(9) img { animation-delay: 1.2s; }
+.partwo .song-container:nth-child(10) img { animation-delay: 1.35s; }
+.partwo .song-container:nth-child(11) img { animation-delay: 1.5s; }
+.partwo .song-container:nth-child(12) img { animation-delay: 1.65s; }
 
 .song-container:hover .songtittle {
   display: block;
